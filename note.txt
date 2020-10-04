@@ -1,15 +1,15 @@
-1 Khởi tạo git: git init
-2 Kết nối project với repo: git remote add origin url-repo
-3
-4 Kiểm tra trạng thái của source: git status
-5 + file màu đỏ: file đã thay đổi nhưng chưa save(working copy)
-6 + file màu xanh: file đã thay đổi và đã save(staging area)
-7
-8 Save nhưng file đã thay đổi (working copy => staging area): git add file-name hoặc .(tất cả file)
-9  commit những thay đổi (staging area => local repository): git commit -m "message"
+Khởi tạo git: git init
+Kết nối project với repo: git remote add origin url-repo
+Kiểm tra trạng thái của source: git status
++ file màu đỏ: file đã thay đổi nhưng chưa save(working copy)
++ file màu xanh: file đã thay đổi và đã save(staging area)
+Save nhưng file đã thay đổi (working copy => staging area): git add file-name hoặc .(tất cả file)
+commit những thay đổi (staging area => local repository): git commit -m "message"
 Lần đầu tiên xài git cần chạy 2 lệnh này:
 git config --global user.name ""
 git config --global user.email ""
 Đẩy code lên trên server (local repository => remote repository)
 git push - u origin master
-Tạo ra 1 branch mới: git branch -b branch-name
+Tạo ra 1 branch mới: git checkout -b branch-name
+Chuyển branch: git checkout branch-name
+Cập nhật code từ remote repository về local repository: git pull
